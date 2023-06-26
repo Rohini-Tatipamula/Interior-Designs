@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>New Document</title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="project.css">
+<script>
+function stickyMenu(){
+    var sticky=document.getElementById("sticky");
+	if(window.pageYOffset > 20){
+	sticky.classList.add("sticky");
+	sticky.classList.remove("menu-ul");
+	}
+	else{
+	sticky.classList.remove("sticky");
+	}
+}
+window.onscroll=function(){stickyMenu();}
+</script>
+</head>
+<body>
+ <div class="top-background">
+  <div class="menu" id="sticky">
+   <ul class="menu-ul">
+   <li><a href="">HOME</a></li>
+   <li><a href="designideas.html">OUR DESIGNS</a></li>
+   <li><a href="booknow.html" class="button">BOOK NOW</a></li>
+   <li><a href="">APPOINTMENT</a></li>
+   <li><a href="contactno.html">CONTACT</a></li>
+   <li><a href="furnitureboard.html">FURNITURE</a></li>
+   </ul>
+   </div>
+   <div class="page-title">INTERIOR DESIGNS
+    <div class="Description">
+	Let us make your home HEAVEN!!!
+   </div>
+   </div>
+   <!--Our Designs block-->
+   <div class="page-blocks">
+        <div class="title">
+		    OUR DESIGNS
+			</div>
+			<div class="design">
+   <img src="living.jpeg" align=><br>
+   <img src="living1.png"><br>
+   <img src="original.jfif"><br>
+   <img src="bedroom.jfif"><br>
+   <img src="kitchen.jpg"><br>
+   <img src="kitchen1.jpg"><br>
+   <img src="ceiling.jpg"><br>
+   <img src="ceiling1.jpg"><br>
+   </div>
+   <button class="more-designs-btn">More Designs</button>
+</body>
+</html>
+   
